@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+          <input type="text" id="monitor" readonly>
+          <div class="buttons">
+            <button id="C" class="btn" onclick="currentMonitor=''; 
+            document.querySelector('#monitor').value=currentMonitor;">C</button>
+            <button id="1" class="btn" onclick="currentMonitor+='1'; 
+            document.querySelector('#monitor').value=currentMonitor;">1</button>
+            <button id="2" class="btn" onclick="currentMonitor+='2'; 
+            document.querySelector('#monitor').value=currentMonitor;">2</button>
+            <button id="+"class="btn" onclick="currentMonitor+='+'; 
+            document.querySelector('#monitor').value=currentMonitor;">+</button>
+            <button id="3" class="btn" onclick="currentMonitor+='3'; 
+            document.querySelector('#monitor').value=currentMonitor;">3</button>
+            <button id="4" class="btn" onclick="currentMonitor+='4'; 
+            document.querySelector('#monitor').value=currentMonitor;">4</button>
+            <button id="-" class="btn" onclick="currentMonitor+='-'; 
+            document.querySelector('#monitor').value=currentMonitor;">-</button>
+            <button id="5" class="btn" onclick="currentMonitor+='5'; 
+            document.querySelector('#monitor').value=currentMonitor;">5</button>
+            <button id="6" class="btn" onclick="currentMonitor+='6'; 
+            document.querySelector('#monitor').value=currentMonitor;">6</button>
+            <button id="*" class="btn" onclick="currentMonitor+='*'; 
+            document.querySelector('#monitor').value=currentMonitor;">*</button>
+            <button id="7" class="btn" onclick="currentMonitor+='7'; 
+            document.querySelector('#monitor').value=currentMonitor;">7</button>
+            <button id="8" class="btn" onclick="currentMonitor+='8'; 
+            document.querySelector('#monitor').value=currentMonitor;">8</button>
+            <button id="/" class="btn" onclick="currentMonitor+='/'; 
+            document.querySelector('#monitor').value=currentMonitor;">/</button>
+            <button id="=" class="btn" onclick="currentMonitor=eval(currentMonitor); 
+            document.querySelector('#monitor').value=currentMonitor;">=</button>
+            <button id="9" class="btn" onclick="currentMonitor+='9'; 
+            document.querySelector('#monitor').value=currentMonitor;">9</button>
+            <button id="0" class="btn" onclick="currentMonitor+='0'; 
+            document.querySelector('#monitor').value=currentMonitor;">0</button>
+            <button id="." class="btn" onclick="currentMonitor+='.'; 
+            document.querySelector('#monitor').value=currentMonitor;">.</button>
+          </div>
+    </div>
+    <script>
+        let currentMonitor='';
+        document.querySelector('#monitor').value=currentMonitor;
+    </script>
+</body>
+</html>
